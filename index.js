@@ -2,7 +2,6 @@
 let isEN = false
 
 const changeLanguage = document.getElementById("lang")
-console.log(changeLanguage)
 changeLanguage.onclick = ()=>{
     isEN = !isEN
     if (isEN){
@@ -21,16 +20,12 @@ document.addEventListener('change', function () {
     var chk = event.target
     
     if (chk.tagName === 'INPUT' && chk.type === 'checkbox') {
-
-    if(chk.checked &&chk.name == 'a'){   
-        if (isEN) intervalId = setInterval(varNameUa, 700)
-        else intervalId = setInterval(varName, 700)
-     }
-        else clearInterval(intervalId)
-    
-      
-
-}})
+        if(chk.checked &&chk.name == 'a'){   
+         if (isEN) intervalId = setInterval(varNameUa, 700)
+         else intervalId = setInterval(varName, 700)
+         }  
+        else clearInterval(intervalId)   
+    }})
 
     var intervalId = null;
     var images  = ['img/1en.png', 'img/2en.png', 'img/3en.png', 'img/2en.png'],
