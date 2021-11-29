@@ -1,5 +1,5 @@
 
-let isEN = true
+let isEN = false
 
 const changeLanguage = document.getElementById("lang")
 console.log(changeLanguage)
@@ -7,11 +7,13 @@ changeLanguage.onclick = ()=>{
     isEN = !isEN
     if (isEN){
         document.getElementById('image_id').src = 'img/1ua.png';
-        
+        document.getElementById("lang_h1").innerHTML = "ВИВЧЕННЯ ГЕМОДИНАМІКИ У ФІЗИЧНІЙ МОДЕЛІ"
+        document.getElementById("lang_p").innerHTML = "Фізична модель серцево-судинної системи"
        } 
         else{
         document.getElementById('image_id').src = 'img/1en.png'
-    
+        document.getElementById("lang_h1").innerHTML = "STUDY OF HEMODYNAMICS IN THE PHYSICAL MODEL"
+        document.getElementById("lang_p").innerHTML = "The physical model of the cardiovascular system"
        }
 }
 
