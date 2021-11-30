@@ -57,6 +57,11 @@ h1 {
 .container {
 	justify-content: center;
 }
+.cardio_model {
+	height: 100%;
+	width: 100%;
+}
+
 .cardiovascular  {
 	width: 65%;
 }
